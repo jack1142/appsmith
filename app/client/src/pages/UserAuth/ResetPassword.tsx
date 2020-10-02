@@ -88,7 +88,7 @@ export const ResetPassword = (props: ResetPasswordProps) => {
   }, [initialValues.token, initialValues.email, verifyToken]);
 
   const showInvalidMessage = !initialValues.token || !initialValues.email;
-  const showExpiredMessage = !isTokenValid && !validatingToken;
+  const showExpiredMessage = true;
   const showSuccessMessage = submitSucceeded && !pristine;
   const showFailureMessage = submitFailed && !!error;
 
